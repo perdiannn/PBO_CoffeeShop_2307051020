@@ -82,7 +82,14 @@ public class KedaiKopiFerdi {
         System.out.println("Shift   : Siang");
         System.out.println("Jabatan : Kasir");
         
-        System.out.println("\nTotal Staff Kasir: 2 staff");
+        Staff kasir3 = new Staff("ST003", "Charles", "Malam", "Barista");
+        System.out.println("Staff 3 berhasil ditambahkan");
+        System.out.println("ID      : ST003");
+        System.out.println("Nama    : Charles");
+        System.out.println("Shift   : Malam");
+        System.out.println("Jabatan : Barista");
+        
+        System.out.println("\nTotal Staff Kasir: 3 staff");
         System.out.println("=================================");
 
         // 3. Instantiation object Pelanggan 
@@ -101,7 +108,13 @@ public class KedaiKopiFerdi {
         System.out.println("Nama    : Zavyn");
         System.out.println("Email   : zavyn12@gmail.com");
         
-        System.out.println("\nTotal Pelanggan: 2 pelanggan");
+        Pelanggan pelanggan3 = new Pelanggan("C003", "Jezmavy", "jezm17@gmail.com");
+        System.out.println("Pelanggan berhasil terdaftar:");
+        System.out.println("ID      : C003");
+        System.out.println("Nama    : Jezmavy");
+        System.out.println("Email   : jezm17@gmail.com");
+        
+        System.out.println("\nTotal Pelanggan: 3 pelanggan");
         System.out.println("=================================");
 
         // 4. Staff membuatkan Pesanan baru untuk Pelanggan

@@ -51,7 +51,16 @@ public class Pelanggan {
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        if (isEmailValid(email)) {
+            this.email = email;
+        } else {
+            System.out.println("Format email tidak valid");
+        }
+    }
+    
+    // Method Private hanya dipakai dalam class Pelanggan
+    private boolean isEmailValid(String email) {
+        return email != null && email.contains("@") && email.contains(".");
     }
 
     // Method 

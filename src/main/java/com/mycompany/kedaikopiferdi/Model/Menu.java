@@ -43,12 +43,17 @@ public abstract class Menu {
         this.namaMenu = namaMenu;
     }
 
-    public double getHarga() {
-        return harga;
+    protected double getHarga() {
+        return this.harga; // protected hanya dipanggil oleh subclass
     }
 
     public void setHarga(double harga) {
-        this.harga = harga;
+        if (harga < 0) {
+            System.out.println("Harga tidak boleh bernilai negatif! Harga diset ke 0.");
+            this.harga = 0;
+        } else {
+            this.harga = harga;
+        }
     }
 
     public String getKategori() {

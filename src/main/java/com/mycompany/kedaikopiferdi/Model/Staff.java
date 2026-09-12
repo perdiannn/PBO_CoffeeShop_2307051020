@@ -58,4 +58,9 @@ public class Staff {
         pesanan.updateStatus("selesai");
         System.out.println(nama + " mengonfirmasi pembayaran pesanan " + pesanan.getIdPesanan());
     }
+    
+    // hanya bisa diakses oleh class lain yang ada dalam package yang sama (model)
+    void logAktivitas(String aktivitas) {
+        System.out.println("[LOG[ " + nama + ": " + aktivitas);
+    }
 }

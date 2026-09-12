@@ -47,7 +47,7 @@ public class Minuman extends Menu {
      */
     @Override
     public double hitungHarga() {
-        double tambahan = 0;
+        double tambahan = ukuran.equals("Large") ? 3000 : ukuran.equals("ExtraLarge") ? 6000 : 0;
         switch (ukuran) {
             case "Large":
                 tambahan = 3000;
