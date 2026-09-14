@@ -19,10 +19,11 @@ public class KedaiKopiFerdi {
         System.out.println("==================================\n");
 
         // 1. Instantiation object Menu (Minuman, Makanan, Snack) 
-        Minuman kopiSusu = new Minuman("M001", "Kopi Susu", 18000,
-                "Kopi susu khas dengan gula aren", "Large", "Dingin");
+        Minuman latte = new Minuman("M001", "Latte", 18000,
+                "Perpaduan espresso bold dengan susu creamy yang lembut, menciptakan latte dengan rasa seimbang, smooth, dan bikin ingin kembali lagi.", 
+                "Large", "Dingin");
         System.out.println("Menu berhasil ditambahkan:");
-        System.out.println("Nama: Kopi Susu");
+        System.out.println("Nama: Latte");
         System.out.println("Harga: Rp18.000");
         System.out.println("Ukuran: Large");
         System.out.println("Suhu: Dingin");
@@ -46,6 +47,16 @@ public class KedaiKopiFerdi {
         System.out.println("Suhu: Dingin");
         System.out.println("-----------------------------");
         
+        Minuman butterscotch = new Minuman("M004", "Butterscotch", 25000,
+                "perpaduan manis dan gurih dengan cita rasa karamel yang lembut, menghadirkan sensasi creamy dan aroma butter yang khas", 
+                "Large", "Dingin");
+        System.out.println("Menu berhasil ditambahkan:");
+        System.out.println("Nama: Butterscotch");
+        System.out.println("Harga: Rp25.000");
+        System.out.println("Ukuran: Normal");
+        System.out.println("Suhu: Dingin");
+        System.out.println("-----------------------------");
+        
         Makanan sandwich = new Makanan("F001", "Sandwich Telur", 20000,
                 "Roti isi telur dan sayuran segar");
         System.out.println("Menu berhasil ditambahkan:");
@@ -54,14 +65,46 @@ public class KedaiKopiFerdi {
         System.out.println("Deskripsi: Roti isi telur dan sayuran segar");
         System.out.println("--------------------------------------------");
         
-        Snack pisangGoreng = new Snack("S001", "Pisang Goreng Coklat", 15000,
+        Makanan nasigorengayam = new Makanan("F002", "Nasi Goreng Ayam", 28000,
+                "Nasi goreng gurih dengan bumbu khas, potongan ayam empuk, dan telur yang berpadu sempurna.");
+        System.out.println("Menu berhasil ditambahkan:");
+        System.out.println("Nama: Nasi Goreng Ayam");
+        System.out.println("Harga: Rp28.000");
+        System.out.println("Deskripsi: Nasi goreng gurih dengan bumbu khas, potongan ayam empuk, dan telur yang berpadu sempurna.");
+        System.out.println("--------------------------------------------");
+        
+        Makanan nasibeefyakiniku = new Makanan("F003", "Nasi Beef Yakiniku", 33000,
+                "Beef lembut, saus yakiniku yang manis-gurih, dan nasi hangat dalam satu porsi yang bikin susah berhenti makan.");
+        System.out.println("Menu berhasil ditambahkan:");
+        System.out.println("Nama: Nasi Beef Yakiniku");
+        System.out.println("Harga: Rp33.000");
+        System.out.println("Deskripsi: Beef lembut, saus yakiniku yang manis-gurih, dan nasi hangat dalam satu porsi yang bikin susah berhenti makan.");
+        System.out.println("--------------------------------------------");
+        
+        Snack mixplatter = new Snack("S001", "Mix Platter", 35000,
+                "Beragam camilan lezat dalam satu sajian! Perpaduan rasa gurih, renyah, dan nikmat yang pas untuk menemani waktu santai dan berbagi bersama orang terdekat.");
+        System.out.println("Menu berhasil ditambahkan:");
+        System.out.println("Nama: Mix Platter");
+        System.out.println("Harga: Rp35.000");
+        System.out.println("Deskripsi: Beragam camilan lezat dalam satu sajian! Perpaduan rasa gurih, renyah, dan nikmat yang pas untuk menemani waktu santai dan berbagi bersama orang terdekat.");
+        System.out.println("--------------------------------------------");
+        
+        Snack cheesecake = new Snack("S002", "Cheese Cake", 28000,
+                "Cheesecake lembut dan creamy dengan cita rasa keju yang gurih, manis yang pas, dan tekstur lumer di mulut.");
+        System.out.println("Menu berhasil ditambahkan:");
+        System.out.println("Nama: Cheese Cake");
+        System.out.println("Harga: Rp28.000");
+        System.out.println("Deskripsi: Cheesecake lembut dan creamy dengan cita rasa keju yang gurih, manis yang pas, dan tekstur lumer di mulut.");
+        System.out.println("--------------------------------------------");
+        
+        Snack pisangGoreng = new Snack("S003", "Pisang Goreng Coklat", 15000,
                 "Pisang goreng crispy dengan topping coklat");
         System.out.println("Menu berhasil ditambahkan:");
         System.out.println("Nama: Pisang Goreng Coklat");
         System.out.println("Harga: Rp15.000");
         System.out.println("Deskripsi: Pisang goreng crispy dengan topping coklat");
         
-        System.out.println("\nTotal menu berhasil dibuat: 5 menu");
+        System.out.println("\nTotal menu berhasil dibuat: 10 menu");
         System.out.println("------------------------------------------------------");
 
         // 2. Instantiation object Staff 
@@ -89,17 +132,31 @@ public class KedaiKopiFerdi {
         System.out.println("Shift   : Malam");
         System.out.println("Jabatan : Barista");
         
-        System.out.println("\nTotal Staff Kasir: 3 staff");
+        Staff kasir4 = new Staff("ST004", "Paulina", "Pagi", "Barista");
+        System.out.println("Staff 3 berhasil ditambahkan");
+        System.out.println("ID      : ST004");
+        System.out.println("Nama    : Paulina");
+        System.out.println("Shift   : Pagi");
+        System.out.println("Jabatan : Barista");
+        
+        Staff kasir5 = new Staff("ST005", "Olivette", "Siang", "Kasir");
+        System.out.println("Staff 3 berhasil ditambahkan");
+        System.out.println("ID      : ST005");
+        System.out.println("Nama    : Olivette");
+        System.out.println("Shift   : Siang");
+        System.out.println("Jabatan : Kasir");
+        
+        System.out.println("\nTotal Staff Kasir: 5 staff");
         System.out.println("=================================");
 
         // 3. Instantiation object Pelanggan 
         System.out.println("===== DATA PELANGGAN =====");
         
-        Pelanggan pelanggan1 = new Pelanggan("C001", "Usman", "usman15@gmail.com");
+        Pelanggan pelanggan1 = new Pelanggan("C001", "Ferdi", "ferdi7@gmail.com");
         System.out.println("Pelanggan berhasil terdaftar:");
         System.out.println("ID      : C001");
-        System.out.println("Nama    : Usman");
-        System.out.println("Email   : usman15@gmail.com");
+        System.out.println("Nama    : Ferdi");
+        System.out.println("Email   : ferdi7@gmail.com");
         System.out.println("-----------------------------");
         
         Pelanggan pelanggan2 = new Pelanggan("C002", "Zavyn", "zavyn12@gmail.com");
@@ -114,14 +171,26 @@ public class KedaiKopiFerdi {
         System.out.println("Nama    : Jezmavy");
         System.out.println("Email   : jezm17@gmail.com");
         
-        System.out.println("\nTotal Pelanggan: 3 pelanggan");
+        Pelanggan pelanggan4 = new Pelanggan("C004", "Florinda", "florin19@gmail.com");
+        System.out.println("Pelanggan berhasil terdaftar:");
+        System.out.println("ID      : C004");
+        System.out.println("Nama    : Florinda");
+        System.out.println("Email   : florin17=9@gmail.com");
+        
+        Pelanggan pelanggan5 = new Pelanggan("C005", "Usman", "usman20@gmail.com");
+        System.out.println("Pelanggan berhasil terdaftar:");
+        System.out.println("ID      : C005");
+        System.out.println("Nama    : Usman");
+        System.out.println("Email   : usman20@gmail.com");
+        
+        System.out.println("\nTotal Pelanggan: 5 pelanggan");
         System.out.println("=================================");
 
         // 4. Staff membuatkan Pesanan baru untuk Pelanggan
         System.out.println("===== MEMBUAT PESANAN =====");
         
         System.out.println("Kasir           : Mavelyn");
-        System.out.println("Nama            : Usman");
+        System.out.println("Nama            : Ferdi");
         System.out.println("ID Pesanan      : OR001");
         System.out.println("Tanggal Pesanan : 2026-07-27");
         
@@ -137,7 +206,7 @@ public class KedaiKopiFerdi {
 
         // 5. Instantiation object ItemPesanan lalu ditambahkan ke Pesanan 
         System.out.println("===== MENAMBAHKAN ITEM PESANAN =====");
-        pesanan1.tambahItem(new ItemPesanan(kopiSusu, 2, "extra shot"));
+        pesanan1.tambahItem(new ItemPesanan(latte, 2, "extra shot"));
         System.out.println(" 2x Kopi Susu Gula Aren ditambahkan");
         System.out.println(" Catatan: extra shot");
         
@@ -245,5 +314,29 @@ public class KedaiKopiFerdi {
         System.out.println("\n------------------------------------");
         System.out.println("    TERIMA KASIH TELAH BERKUNJUNG");
         System.out.println("          KEDAI KOPI FERDI");
+        System.out.println("\n");
+        
+        // 9. Simulasi Encapsulation: Getter, Setter Valid & Invalid 
+        // Panggil getter -> tampilkan data awal pelanggan
+        System.out.println("Email awal pelanggan: " + pelanggan1.getEmail());
+
+        // Simulasi setter dengan data VALID
+        pelanggan1.setEmail("ferdi7@email.com");
+        System.out.println("Email setelah diubah (valid): " + pelanggan1.getEmail());
+
+        // Simulasi setter dengan data TIDAK VALID
+        pelanggan2.setEmail("Zavyn format email tidak valid");
+        System.out.println("Email setelah percobaan invalid (harusnya tetap yg lama): " + pelanggan2.getEmail());
+
+        // Simulasi validasi harga (Menambahkan validasi di Menu.java)
+        System.out.println("\nMengubah harga menu dengan data valid");
+        latte.setHarga(18000);
+        System.out.println("Harga setelah diubah (valid): Rp" + latte.getHarga());
+        cappuccino.setHarga(22000);
+        System.out.println("Harga setelah diubah (valid): Rp" + cappuccino.getHarga());
+
+        System.out.println("\nMengubah harga menu dengan data tidak valid");
+        latte.setHarga(-5000);
+        System.out.println("Harga setelah percobaan invalid: Rp" + latte.getHarga());
     }
 }

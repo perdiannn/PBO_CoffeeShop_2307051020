@@ -43,7 +43,7 @@ public abstract class Menu {
         this.namaMenu = namaMenu;
     }
 
-    protected double getHarga() {
+    public double getHarga() {
         return this.harga; // protected hanya dipanggil oleh subclass
     }
 
