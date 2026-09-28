@@ -8,6 +8,11 @@ package com.mycompany.kedaikopiferdi.model;
  *
  * @author ASUS
  */
+/*
+ * Class Makanan merupakan turunan (inheritance) dari class Menu.
+ * Konsep OOP: Inheritance & Polymorphism
+ */
+
 public class Makanan extends Menu {
 
     public Makanan(String idMenu, String namaMenu, double harga, String deskripsi) {
@@ -18,10 +23,20 @@ public class Makanan extends Menu {
     /**
      * Override method hitungHarga() dari class Menu.
      * Harga makanan tetap, tidak ada tambahan ukuran.
-     * @return 
+     * @return harga makanan
      */
     @Override
     public double hitungHarga() {
         return getHarga();
+    }
+    
+    /**
+     * Override method getInfo() dari class Menu.
+     * Menambahkan keterangan bahwa menu merupakan makanan berat.
+     * @return informasi makanan
+     */
+    @Override
+    public String getInfo() {
+        return super.getInfo() + " (Makanan Berat)";
     }
 }

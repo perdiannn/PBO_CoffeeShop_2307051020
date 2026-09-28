@@ -25,4 +25,14 @@ public class Snack extends Menu {
     public double hitungHarga() {
         return getHarga();
     }
+    
+    /**
+     * Override method getInfo() dari class Menu.
+     * Menambahkan keterangan bahwa menu merupakan camilan.
+     * @return informasi snack
+     */
+    @Override
+    public String getInfo() {
+        return super.getInfo() + " (Camilan)";
+    }
 }

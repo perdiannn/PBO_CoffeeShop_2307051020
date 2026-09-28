@@ -77,6 +77,11 @@ public abstract class Menu {
         return "[" + kategori + "] " + namaMenu + " - Rp" + harga;
     }
 
-    
+    // Method Abstract, akan di-override oleh subclass
     public abstract double hitungHarga();
+    
+    // Overloading, nama method sama, tetapi memiliki parameter berbeda
+    public double hitungHarga(int jumlah) {
+        return hitungHarga() * jumlah;
+    }
 }

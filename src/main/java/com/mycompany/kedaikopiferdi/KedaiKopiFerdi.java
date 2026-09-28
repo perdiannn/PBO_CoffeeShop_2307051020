@@ -39,7 +39,8 @@ public class KedaiKopiFerdi {
         System.out.println("-----------------------------");
         
         Minuman americano = new Minuman("M003", "Americano", 15000,
-                "Espresso yang dipadukan dengan air panas, menghasilkan cita rasa kopi yang kuat dan khas.", "Large", "Dingin");
+                "Espresso yang dipadukan dengan air panas, menghasilkan cita rasa kopi yang kuat dan khas.", 
+                "Large", "Dingin");
         System.out.println("Menu berhasil ditambahkan:");
         System.out.println("Nama: Americano");
         System.out.println("Harga: Rp15.000");
@@ -47,7 +48,17 @@ public class KedaiKopiFerdi {
         System.out.println("Suhu: Dingin");
         System.out.println("-----------------------------");
         
-        Minuman butterscotch = new Minuman("M004", "Butterscotch", 25000,
+        Minuman mochaccino = new Minuman("M004", "Mochaccino", 22000,
+                "Perpaduan espresso, susu lembut, dan cokelat yang menghasilkan rasa kopi yang creamy, manis, dan nikmat.", 
+                "Large", "Dingin");
+        System.out.println("Menu berhasil ditambahkan:");
+        System.out.println("Nama: Mochaccino");
+        System.out.println("Harga: Rp22.000");
+        System.out.println("Ukuran: Extra Large");
+        System.out.println("Suhu: Dingin");
+        System.out.println("-----------------------------");
+        
+        Minuman butterscotch = new Minuman("M005", "Butterscotch", 25000,
                 "perpaduan manis dan gurih dengan cita rasa karamel yang lembut, menghadirkan sensasi creamy dan aroma butter yang khas", 
                 "Large", "Dingin");
         System.out.println("Menu berhasil ditambahkan:");
@@ -81,6 +92,22 @@ public class KedaiKopiFerdi {
         System.out.println("Deskripsi: Beef lembut, saus yakiniku yang manis-gurih, dan nasi hangat dalam satu porsi yang bikin susah berhenti makan.");
         System.out.println("--------------------------------------------");
         
+        Makanan nasiayamkatsu = new Makanan("F004", "Nasi Ayam Katsu", 29000,
+                "Nasi hangat yang disajikan dengan ayam katsu renyah, berbalut tepung crispy, dengan cita rasa gurih dan lezat.");
+        System.out.println("Menu berhasil ditambahkan:");
+        System.out.println("Nama: Nasi Ayam Katsu");
+        System.out.println("Harga: Rp29.000");
+        System.out.println("Deskripsi: Nasi hangat yang disajikan dengan ayam katsu renyah, berbalut tepung crispy, dengan cita rasa gurih dan lezat.");
+        System.out.println("--------------------------------------------");
+        
+        Makanan ayamkarage = new Makanan("F005", "Ayam Karage", 26000,
+                "Potongan ayam yang dibumbui khas, dilapisi tepung renyah, lalu digoreng hingga keemasan dengan tekstur crispy di luar dan juicy di dalam.");
+        System.out.println("Menu berhasil ditambahkan:");
+        System.out.println("Nama: Ayam Karage");
+        System.out.println("Harga: Rp26.000");
+        System.out.println("Deskripsi: Potongan ayam yang dibumbui khas, dilapisi tepung renyah, lalu digoreng hingga keemasan dengan tekstur crispy di luar dan juicy di dalam.");
+        System.out.println("--------------------------------------------");
+        
         Snack mixplatter = new Snack("S001", "Mix Platter", 35000,
                 "Beragam camilan lezat dalam satu sajian! Perpaduan rasa gurih, renyah, dan nikmat yang pas untuk menemani waktu santai dan berbagi bersama orang terdekat.");
         System.out.println("Menu berhasil ditambahkan:");
@@ -104,7 +131,7 @@ public class KedaiKopiFerdi {
         System.out.println("Harga: Rp15.000");
         System.out.println("Deskripsi: Pisang goreng crispy dengan topping coklat");
         
-        System.out.println("\nTotal menu berhasil dibuat: 10 menu");
+        System.out.println("\nTotal menu berhasil dibuat: 11 menu");
         System.out.println("------------------------------------------------------");
 
         // 2. Instantiation object Staff 
@@ -124,6 +151,7 @@ public class KedaiKopiFerdi {
         System.out.println("Nama    : Mairyn");
         System.out.println("Shift   : Siang");
         System.out.println("Jabatan : Kasir");
+        System.out.println("------------------------------");
         
         Staff kasir3 = new Staff("ST003", "Charles", "Malam", "Barista");
         System.out.println("Staff 3 berhasil ditambahkan");
@@ -131,20 +159,23 @@ public class KedaiKopiFerdi {
         System.out.println("Nama    : Charles");
         System.out.println("Shift   : Malam");
         System.out.println("Jabatan : Barista");
+        System.out.println("------------------------------");
         
         Staff kasir4 = new Staff("ST004", "Paulina", "Pagi", "Barista");
-        System.out.println("Staff 3 berhasil ditambahkan");
+        System.out.println("Staff 4 berhasil ditambahkan");
         System.out.println("ID      : ST004");
         System.out.println("Nama    : Paulina");
         System.out.println("Shift   : Pagi");
         System.out.println("Jabatan : Barista");
+        System.out.println("------------------------------");
         
         Staff kasir5 = new Staff("ST005", "Olivette", "Siang", "Kasir");
-        System.out.println("Staff 3 berhasil ditambahkan");
+        System.out.println("Staff 5  berhasil ditambahkan");
         System.out.println("ID      : ST005");
         System.out.println("Nama    : Olivette");
         System.out.println("Shift   : Siang");
         System.out.println("Jabatan : Kasir");
+        System.out.println("------------------------------");
         
         System.out.println("\nTotal Staff Kasir: 5 staff");
         System.out.println("=================================");
@@ -157,25 +188,28 @@ public class KedaiKopiFerdi {
         System.out.println("ID      : C001");
         System.out.println("Nama    : Ferdi");
         System.out.println("Email   : ferdi7@gmail.com");
-        System.out.println("-----------------------------");
+        System.out.println("------------------------------");
         
         Pelanggan pelanggan2 = new Pelanggan("C002", "Zavyn", "zavyn12@gmail.com");
         System.out.println("Pelanggan berhasil terdaftar:");
         System.out.println("ID      : C002");
         System.out.println("Nama    : Zavyn");
         System.out.println("Email   : zavyn12@gmail.com");
+        System.out.println("------------------------------");
         
         Pelanggan pelanggan3 = new Pelanggan("C003", "Jezmavy", "jezm17@gmail.com");
         System.out.println("Pelanggan berhasil terdaftar:");
         System.out.println("ID      : C003");
         System.out.println("Nama    : Jezmavy");
         System.out.println("Email   : jezm17@gmail.com");
+        System.out.println("------------------------------");
         
         Pelanggan pelanggan4 = new Pelanggan("C004", "Florinda", "florin19@gmail.com");
         System.out.println("Pelanggan berhasil terdaftar:");
         System.out.println("ID      : C004");
         System.out.println("Nama    : Florinda");
         System.out.println("Email   : florin17=9@gmail.com");
+        System.out.println("------------------------------");
         
         Pelanggan pelanggan5 = new Pelanggan("C005", "Usman", "usman20@gmail.com");
         System.out.println("Pelanggan berhasil terdaftar:");
@@ -211,7 +245,7 @@ public class KedaiKopiFerdi {
         System.out.println(" Catatan: extra shot");
         
         pesanan1.tambahItem(new ItemPesanan(cappuccino, 1, "less sugar"));
-        System.out.println(" 1x Capuccino ditambahkan");
+        System.out.println(" 1x Cappuccino ditambahkan");
         System.out.println(" Catatan: less sugar");
         
         pesanan1.tambahItem(new ItemPesanan(americano, 1, ""));
@@ -284,7 +318,7 @@ public class KedaiKopiFerdi {
         
         pesanan2.tambahItem(new ItemPesanan(cappuccino, 2, ""));
         
-        System.out.println(" 2x Capuccino ditambahkan");
+        System.out.println(" 2x Cappuccino ditambahkan");
         pesanan2.cetakDetail();
 
         System.out.println();
@@ -315,6 +349,7 @@ public class KedaiKopiFerdi {
         System.out.println("    TERIMA KASIH TELAH BERKUNJUNG");
         System.out.println("          KEDAI KOPI FERDI");
         System.out.println("\n");
+        System.out.println("--------------------------------------");
         
         // 9. Simulasi Encapsulation: Getter, Setter Valid & Invalid 
         // Panggil getter -> tampilkan data awal pelanggan
@@ -334,9 +369,67 @@ public class KedaiKopiFerdi {
         System.out.println("Harga setelah diubah (valid): Rp" + latte.getHarga());
         cappuccino.setHarga(22000);
         System.out.println("Harga setelah diubah (valid): Rp" + cappuccino.getHarga());
+        
+        // Mengembalikan harga latte e harga normal
+        latte.setHarga(18000);
+        System.out.println("Harga Latte dikembalikan menjadi: Rp" + latte.getHarga());
 
-        System.out.println("\nMengubah harga menu dengan data tidak valid");
-        latte.setHarga(-5000);
-        System.out.println("Harga setelah percobaan invalid: Rp" + latte.getHarga());
+        // System.out.println("\nMengubah harga menu dengan data tidak valid");
+        // latte.setHarga(-5000);
+        // System.out.println("Harga setelah percobaan invalid: Rp" + latte.getHarga());
+        System.out.println("======================================");
+        
+        // 10. Demo Konsep Inheritance dan Method Overloading dan Overriding
+        // Object dari subclass Minuman, Makanan, dan Snack
+        // disimpan dalam array bertipe parent class Menu
+        
+        Menu[] daftarMenu = {
+            latte, sandwich, pisangGoreng
+        };
+        
+        for (Menu m : daftarMenu) {
+            System.out.println(
+            m.getInfo() + " | Harga Akhir: Rp" + m.hitungHarga()
+            );
+        }
+        System.out.println("======================================");
+        
+        // Overloading hitungHarga()
+        
+        // Tanpa Parameter
+        System.out.println(
+            "Harga 1 Latte: Rp" + latte.hitungHarga()
+        );
+        
+        System.out.println(
+            "Harga 3 Mochaccino: Rp" + mochaccino.hitungHarga(3)
+        );
+        
+        System.out.println("======================================");
+        
+        // Overloading tambahItem()
+        
+        Pesanan pesanan3 = pelanggan1.buatPesanan(
+            "OR003", "2026-09-06"
+        );
+        
+        // Versi 1: tambahItem(ItemPesanan)
+        pesanan3.tambahItem(
+            new ItemPesanan(cappuccino, 1, "less sugar")
+        );
+        
+        // Versi 2: tambahItem(Menu, int)
+        pesanan3.tambahItem(
+            sandwich, 2
+        );
+        
+        // Versi 3: tambahItem(Menu, int, String)
+        pesanan3.tambahItem(
+            pisangGoreng, 2, "tanpa coklat"
+        );
+        
+        System.out.println("\nDetail Pesanan OR003:");
+        pesanan3.cetakDetail();
+        System.out.println("=================================================");
     }
 }

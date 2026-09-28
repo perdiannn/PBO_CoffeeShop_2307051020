@@ -12,6 +12,7 @@ import com.mycompany.kedaikopiferdi.model.Pesanan;
 
 /**
  * Class PembayaranQRIS
+ * Konsep OOP: Inheritance & Polymorphism
  */
 public class PembayaranQRIS extends Pembayaran {
 

@@ -12,6 +12,7 @@ import com.mycompany.kedaikopiferdi.model.Pesanan;
 
 /**
  * Class PembayaranTunai (Cash)
+ * Konsep OOP: Inheritance & Polymorphism
  */
 public class PembayaranTunai extends Pembayaran {
 

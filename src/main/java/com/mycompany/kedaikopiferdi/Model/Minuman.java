@@ -8,6 +8,11 @@ package com.mycompany.kedaikopiferdi.model;
  *
  * @author ASUS
  */
+/*
+ * Class Minuman merupakan turunan (inheritance) dari class Menu.
+ * Konsep OOP: Inheritance & Polymorphism
+ */
+
 public class Minuman extends Menu {
 
     // Field 

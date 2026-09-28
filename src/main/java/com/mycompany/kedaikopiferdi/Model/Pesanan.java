@@ -57,9 +57,19 @@ public class Pesanan {
         this.status = status;
     }
 
-    // Method
+    // Method Overloading: Menerimam Object ItemPesanan
     public void tambahItem(ItemPesanan item) {
         daftarItemPesanan.add(item);
+    }
+    
+    // Method Overloading versi 2: Menerima Menu, Jumlah
+    public void tambahItem(Menu menu, int jumlah) {
+        daftarItemPesanan.add(new ItemPesanan(menu, jumlah, ""));
+    }
+    
+    // Method Overloading: Menerima Menu, Jumlah, catatan
+    public void tambahItem(Menu menu, int jumlah, String catatan) {
+        daftarItemPesanan.add(new ItemPesanan(menu, jumlah, catatan));
     }
 
     public void hapusItem(ItemPesanan item) {
