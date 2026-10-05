@@ -80,6 +80,9 @@ public abstract class Menu {
     // Method Abstract, akan di-override oleh subclass
     public abstract double hitungHarga();
     
+    // Method Abstract: tiap subclass tentukan kategori display
+    public abstract String getKategoriTampilan();
+    
     // Overloading, nama method sama, tetapi memiliki parameter berbeda
     public double hitungHarga(int jumlah) {
         return hitungHarga() * jumlah;

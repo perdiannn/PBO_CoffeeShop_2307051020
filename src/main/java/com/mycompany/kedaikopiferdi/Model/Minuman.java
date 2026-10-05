@@ -70,4 +70,9 @@ public class Minuman extends Menu {
     public String getInfo() {
         return super.getInfo() + " (" + ukuran + ", " + suhu + ")";
     }
+    
+    @Override
+    public String getKategoriTampilan() {
+        return "Minuman - " + getSuhu();
+    }
 }

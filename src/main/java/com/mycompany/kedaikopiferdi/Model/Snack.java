@@ -35,4 +35,9 @@ public class Snack extends Menu {
     public String getInfo() {
         return super.getInfo() + " (Camilan)";
     }
+    
+    @Override
+    public String getKategoriTampilan() {
+        return "Snack";
+    }
 }

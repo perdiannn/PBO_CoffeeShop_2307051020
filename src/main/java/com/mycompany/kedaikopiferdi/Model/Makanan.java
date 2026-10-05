@@ -39,4 +39,9 @@ public class Makanan extends Menu {
     public String getInfo() {
         return super.getInfo() + " (Makanan Berat)";
     }
+    
+    @Override
+    public String getKategoriTampilan() {
+        return "Makanan Berat";
+    }
 }

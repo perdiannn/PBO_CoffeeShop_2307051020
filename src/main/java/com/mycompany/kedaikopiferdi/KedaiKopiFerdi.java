@@ -274,12 +274,13 @@ public class KedaiKopiFerdi {
         System.out.println();
         pesanan1.cetakDetail();
 
-        // 6. Instantiation object Pembayaran (Polymorphism lewat Payable)
+        // 6. Instantiation object Pembayaran (Konsep Polymorphism lewat Payable)
         System.out.println("\n===== PEMBAYARAN TUNAI =====");
         
         System.out.println("ID Pembayaran   : P001");
         System.out.println("Metode          : Tunai");
         System.out.println("Total Tagihan   : Rp" + pesanan1.hitungTotal());
+        // Polymorphism lewat interface Payable (Pesanan 1)
         Payable pembayaran = new PembayaranTunai(
                 "P001", 
                 pesanan1, 
@@ -322,6 +323,7 @@ public class KedaiKopiFerdi {
         pesanan2.cetakDetail();
 
         System.out.println();
+        // Polymorphism lewat interface Payable (Pesanan 2)
         Payable pembayaran2 = new PembayaranQRIS(
                 "P002", 
                 pesanan2, 
@@ -382,14 +384,16 @@ public class KedaiKopiFerdi {
         // 10. Demo Konsep Inheritance dan Method Overloading dan Overriding
         // Object dari subclass Minuman, Makanan, dan Snack
         // disimpan dalam array bertipe parent class Menu
+        // Konsep Polymorphism dan Abstaction
         
         Menu[] daftarMenu = {
-            latte, sandwich, pisangGoreng
+            latte, sandwich, mixplatter, pisangGoreng 
         };
         
         for (Menu m : daftarMenu) {
             System.out.println(
             m.getInfo() + " | Harga Akhir: Rp" + m.hitungHarga()
+            + " | Kategori: " + m.getKategoriTampilan()
             );
         }
         System.out.println("======================================");
